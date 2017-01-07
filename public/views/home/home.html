@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <div class="container">
+      
+    <h3 style="float:left;margin-right:67%">Remote Desktop</h3>
+      
+    <button class="btn btn-primary" ng-click="startRecording()">Start</button>
+    <button class="btn btn-primary" ng-click="pauseRecoring()">Pause</button>
+    <button class="btn btn-primary" ng-click="stopRecoring()">Stop</button>
+    <button class="btn btn-default" ng-click="doAction('LEFT')">LEFT</button>
+    <button class="btn btn-default" ng-click="doAction('RIGHT')">RIGHT</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        Mirror Screen
+    </div>
+    <div class="panel-body">
+      <div class="row show-list">
+          <img ng-src="{{ imageData }}" ng-if="imageView" style="width:100%">
+      </div>
+    </div>
+  </div>
+</div>
